@@ -19,3 +19,15 @@ WHERE date_of_birth > '1988-12-31'
  Seleziona tutti gli ospiti il cui nome inizia con la D
 
  SELECT * FROM ospiti WHERE name LIKE 'd%'
+
+ Calcola il totale degli ordini accepted
+
+ SELECT COUNT(*)
+ FROM pagamenti
+ WHERE status LIKE 'accepted'
+
+ Qual è il prezzo massimo pagato?
+
+ SELECT *
+ FROM pagamenti
+ ORDER BY price DESC
